@@ -9,6 +9,11 @@
 name: TeamCoder Deploy
 
 on:
+  push:
+    branches:
+      - teamcoder-deploy-trigger
+    paths:
+      - .teamcoder/build-trigger.json
   workflow_dispatch:
 
 env:
